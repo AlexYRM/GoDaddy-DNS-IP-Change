@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  IPchanger:
+    container_name: changeIP
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      doppler_token: <DOPPLER_TOKEN>
+      TZ: Europe/Bucharest
+    restart: always
