@@ -7,6 +7,6 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      DOPPLER_TOKEN: {{DOPPLER_TOKEN}}
+      DOPPLER_TOKEN: $DOPPLER_TOKEN
       TZ: Europe/Bucharest
     restart: always
