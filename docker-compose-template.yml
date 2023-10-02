@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  IPchanger:
-    container_name: changeIP
+  ipchanger:
+    container_name: changeip
     build:
       context: .
       dockerfile: Dockerfile
