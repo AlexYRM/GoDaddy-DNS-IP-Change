@@ -17,7 +17,7 @@ def check_current_ip():
     data = response.json()
     # Extract the current IP address from the API response
     current_ip = data[0]["data"]
-    print(current_ip)
+    print(f"Website IP is {current_ip}")
     return current_ip
 
 
@@ -42,6 +42,7 @@ def update_ip(ip, func_ttl, func_name):
 def ip_verification():
     # Get the server's current IP address
     server_ip = read.server_ip()
+    print(f"Server IP is {server_ip}")
     # Get the current IP address associated with the DNS record
     website_ip = check_current_ip()
     # Compare the two IP addresses and update if different
