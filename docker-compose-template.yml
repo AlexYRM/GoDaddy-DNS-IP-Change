@@ -8,5 +8,5 @@ services:
       dockerfile: Dockerfile
     environment:
       DOPPLER_TOKEN: $DOPPLER_TOKEN
-      TZ: Europe/Bucharest
+      TZ: $TZ
     restart: always
