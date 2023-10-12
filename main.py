@@ -7,7 +7,7 @@ scheduler = BlockingScheduler()
 
 print("Start Scheduling jobs")
 # add a job to the scheduler from "write" to be executed at 09:20 every day.
-scheduler.add_job(func=write.ip_verification, trigger="cron", hour=17, minute=59)
+scheduler.add_job(func=write.ip_verification, trigger="cron", hour=9, minute=20)
 
 # start the scheduler and run until requested to stop
 scheduler.start()
